@@ -15,11 +15,9 @@ public class ObserverTest {
         receptor.attach(stock);
         receptor.attach(watchTV);
 
-
         // receptor.detach(stock);  //out : WatchTVObserver  //说明： equals  方法和  hashcode 方法
 
         receptor.notifyObserver();
-
     }//:~ out:
     /**
      * StockObserver
