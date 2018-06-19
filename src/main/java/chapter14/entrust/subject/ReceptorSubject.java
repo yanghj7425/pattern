@@ -21,6 +21,7 @@ public class ReceptorSubject implements Subject {
     public void detach(Observer observer) {
 
     }
+    
 
 
     public void notifyObserver() {
