@@ -21,8 +21,7 @@ public class AbstractFactoryTest {
         Class<?> c = Class.forName(reflect);
         Class classes[] = c.getInterfaces();
 
-        for (Class bb : classes
-                ) {
+        for (Class bb : classes) {
             System.out.println(bb.getSimpleName());
         }
         IUser user = (IUser) c.newInstance();
