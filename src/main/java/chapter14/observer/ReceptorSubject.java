@@ -6,6 +6,13 @@ import java.util.List;
 public class ReceptorSubject implements Subject {
     private List<Observer> observers = new ArrayList<Observer>();
 
+    private String receptorSubjectState;
+
+
+    public ReceptorSubject(String receptorSubjectState) {
+        this.receptorSubjectState = receptorSubjectState;
+    }
+
     public void attach(Observer observer) {
         observers.add(observer);
     }
@@ -20,5 +27,7 @@ public class ReceptorSubject implements Subject {
         }
     }
 
-
+    public String getReceptorSubjectState() {
+        return receptorSubjectState;
+    }
 }

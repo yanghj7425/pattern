@@ -8,9 +8,9 @@ public class ObserverTest {
     @Test
     public void observerTest() {
 
-        ReceptorSubject receptor = new ReceptorSubject();
+        ReceptorSubject receptor = new ReceptorSubject("1");
         StockObserver stock = new StockObserver("observer", receptor);
-        WatchTVObserver watchTV = new WatchTVObserver("observer",receptor);
+        WatchTVObserver watchTV = new WatchTVObserver("observer", receptor);
 
         receptor.attach(stock);
         receptor.attach(watchTV);

@@ -2,7 +2,7 @@ package chapter6.decrator.decorator;
 
 import chapter6.decrator.component.Person;
 
-public abstract class Decorator extends Person {
+public abstract class Decorator implements Person {
 
     protected Person person;
 
@@ -10,7 +10,6 @@ public abstract class Decorator extends Person {
         this.person = person;
     }
 
-    @Override
     public void show() {
         if (person != null) {
             person.show();
