@@ -26,13 +26,15 @@ public class Work {
 
     public void setHour(int hour) {
         this.hour = hour;
-        int stateCode = 4;
+        int stateCode = State.REST;
         if (hour < 12) {
             stateCode = State.FORENOON;
         } else if (hour < 13) {
             stateCode = State.NOON;
         } else if (hour < 17) {
             stateCode = State.AFTERNOON;
+        } else if (hour < 21) {
+            stateCode = State.EVENING;
         }
         setState(stateCode);
     }
