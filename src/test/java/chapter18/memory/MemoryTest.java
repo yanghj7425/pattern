@@ -7,6 +7,7 @@ public class MemoryTest {
 
     @Test
     public void memoryTest() {
+
         GameCareTaker careTaker = new GameCareTaker();
 
         GamePlayer player = new GamePlayer();
