@@ -1,4 +1,4 @@
-package chapter6.decretor;
+package chapter6.t.decretor;
 
 import chapter6.decrator.component.ConcretePerson;
 import chapter6.decrator.decorator.ConcreteDecoratorShirt;
