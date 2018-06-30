@@ -9,6 +9,7 @@ public class ObserverTest {
     public void observerTest() {
 
         ReceptorSubject receptor = new ReceptorSubject("1");
+
         StockObserver stock = new StockObserver("observer", receptor);
         WatchTVObserver watchTV = new WatchTVObserver("observer", receptor);
 

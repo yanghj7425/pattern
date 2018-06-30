@@ -7,6 +7,7 @@ import java.util.logging.Logger;
 public class Event {
 
     private Logger logger = Logger.getLogger(getClass().getSimpleName());
+
     //执行方法的对象
     private Object object;
 

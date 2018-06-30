@@ -10,6 +10,8 @@ public class EntrustTest {
 
     @Test
     public void entrustTest() {
+
+
         ReceptorSubject receptor = new ReceptorSubject();
 
         StockObserver stock = new StockObserver("stock", receptor);
