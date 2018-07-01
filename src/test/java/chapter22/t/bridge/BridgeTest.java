@@ -8,13 +8,11 @@ import org.junit.Test;
 public class BridgeTest {
 
     @Test
-    public  void bridge(){
+    public void bridge() {
         HandsetBrandA handsetBrandA = new HandsetBrandA();
-        handsetBrandA.setHandsetSoft(new HandsetGame());
-        handsetBrandA.run();
+        handsetBrandA.attach(new HandsetTel());
+        handsetBrandA.attach(new HandsetGame());
 
-
-        handsetBrandA.setHandsetSoft(new HandsetTel());
-        handsetBrandA.run();
+        handsetBrandA.run("game");
     }
 }
