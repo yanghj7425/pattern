@@ -12,7 +12,6 @@ public class BridgeTest {
         HandsetBrandA handsetBrandA = new HandsetBrandA();
         handsetBrandA.attach(new HandsetTel());
         handsetBrandA.attach(new HandsetGame());
-
         handsetBrandA.run("game");
     }
 }
