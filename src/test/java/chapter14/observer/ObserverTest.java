@@ -8,17 +8,16 @@ public class ObserverTest {
     @Test
     public void observerTest() {
 
-        ReceptorSubject receptor = new ReceptorSubject("1");
+        ReceptorObserver receptor = new ReceptorObserver("1");
 
-        StockObserver stock = new StockObserver("observer", receptor);
-        WatchTVObserver watchTV = new WatchTVObserver("observer", receptor);
+        StockHolder zhansan = new StockHolder("zhansan", receptor);
+        WatcherTV lisi = new WatcherTV("lizi", receptor);
+        StockHolder wanwu = new StockHolder("wanwu",receptor);
+        receptor.attach(zhansan);
+        receptor.attach(lisi);
+        lisi.setObservableState(1);
 
-        receptor.attach(stock);
-        receptor.attach(watchTV);
-
-        // receptor.detach(stock);  //out : WatchTVObserver  //说明： equals  方法和  hashcode 方法
-
-        receptor.notifyObserver();
+        receptor.notifyObserver("The boss will be come back letter");
     }//:~ out:
     /**
      * StockObserver
