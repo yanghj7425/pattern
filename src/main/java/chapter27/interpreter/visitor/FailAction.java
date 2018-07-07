@@ -1,9 +1,15 @@
-package chapter27.interpreter;
+package chapter27.interpreter.visitor;
 
-public class SuccessAction implements Action {
+
+import chapter27.interpreter.element.Man;
+import chapter27.interpreter.element.Woman;
+
+public class FailAction implements Action {
+
     @Override
     public void manReaction(Man man) {
         System.out.println(man.getClass().getName() + "\t" + getClass().getName());
+        man.cheerUp();
     }
 
     @Override
