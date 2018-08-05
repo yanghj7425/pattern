@@ -16,7 +16,6 @@ public class VisitorClient {
 
         action = new SuccessAction();
 
-
         objectStructure.show(action);
 
         action = new FailAction();
