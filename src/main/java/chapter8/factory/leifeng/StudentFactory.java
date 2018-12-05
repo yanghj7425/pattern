@@ -3,7 +3,7 @@ package chapter8.factory.leifeng;
 public class StudentFactory implements IFactory{
 
 
-    public LeiFeng CreateLeiFeng() {
+    public LeiFen createLeiFen() {
         return new Student();
     }
 }

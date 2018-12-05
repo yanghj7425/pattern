@@ -1,6 +1,6 @@
 package chapter8.factory.leifeng;
 
-public class LeiFeng {
+public class LeiFen {
 
     public void sweep(){
         System.out.println("do sweep");

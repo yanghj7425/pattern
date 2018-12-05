@@ -9,8 +9,8 @@ public class StockObserver extends Observer {
         super(name, subject);
     }
 
-
     public void stockObserverUpdate(Integer dot) {
         System.out.println(getClass().getSimpleName() + "\t" + dot);
     }
+
 }
