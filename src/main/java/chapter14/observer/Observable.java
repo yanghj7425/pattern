@@ -2,7 +2,7 @@ package chapter14.observer;
 
 public abstract class Observable {
 
-    // 被观察者状态s
+    // 被观察者状态
     private int observableState;
 
     //被观察者名称

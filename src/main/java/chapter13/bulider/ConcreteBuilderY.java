@@ -1,6 +1,6 @@
 package chapter13.bulider;
 
-public class ConcreteBuliderY extends Bulider {
+public class ConcreteBuilderY extends Builder {
 
     private Product product = new Product();
 

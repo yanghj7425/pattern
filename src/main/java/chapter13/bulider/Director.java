@@ -1,16 +1,14 @@
 package chapter13.bulider;
 
 public class Director {
-    private Bulider bulider;
+    private Builder bulider;
 
-    public Director(Bulider bulider) {
+    public Director(Builder bulider) {
         this.bulider = bulider;
     }
 
 
     public void construct() {
-
-
         bulider.optionB();
         bulider.optionA();
     }

@@ -8,7 +8,7 @@ public class EventHandler {
     private List<Event> events;
 
     public EventHandler() {
-        events = new ArrayList<Event>();
+        events = new ArrayList<>();
     }
 
 

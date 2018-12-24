@@ -42,7 +42,6 @@ public class Event {
 
     public void invoke() {
         try {
-
             Method invokeMethod = getObject().getClass().getMethod(getMethodName(), getParamType());
             invokeMethod.invoke(getObject(), getParams());
 
