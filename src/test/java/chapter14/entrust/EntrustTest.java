@@ -17,8 +17,6 @@ public class EntrustTest {
         StockObserver stock = new StockObserver("stock", receptor);
         WatchTVObserver watchTV = new WatchTVObserver("watchTV", receptor);
 
-        receptor.attach(watchTV, "watchTVUpdate", "don`t watching TV. Please!");
-        receptor.attach(stock, "stockObserverUpdate", 200);
 
 
         receptor.notifyObserver();
