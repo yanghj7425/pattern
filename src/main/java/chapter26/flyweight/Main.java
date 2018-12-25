@@ -1,8 +1,8 @@
 package chapter26.flyweight;
 
-public class Client {
+public class Main {
 
-    public void clientTest() {
+    public static void main(String[] args) {
         FlyWeightFactory factory = new FlyWeightFactory();
         FlyWeight flyWeight = factory.getFlyWeight("styleA");
 

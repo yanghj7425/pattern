@@ -2,10 +2,8 @@ package chapter20.iterator;
 
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
-import org.junit.Test;
 
-public class IteratorTest {
-
+public class Main {
     public static class User {
 
         private String name;
@@ -43,8 +41,7 @@ public class IteratorTest {
         }
     }
 
-    @Test
-    public void iteratorTest() {
+    public static void main(String[] strings) {
 
         ConcreteAggregate<User> concreteAggregate = new ConcreteAggregate<>();
 

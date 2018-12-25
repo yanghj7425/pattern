@@ -1,10 +1,7 @@
 package chapter19.composite.example;
 
-import org.junit.Test;
-
-public class CompanyTest {
-    @Test
-    public void companyTest() {
+public class Main {
+    public static void main(String[] args) {
         ConcreteCompany comp = new ConcreteCompany("head");
         HRDepartment compHR = new HRDepartment("head hr");
         FinanceDepartment compFin = new FinanceDepartment("head finance");
@@ -14,17 +11,14 @@ public class CompanyTest {
 
         ConcreteCompany partA = new ConcreteCompany("part A");
         HRDepartment partAHR = new HRDepartment("part A hr");
-        FinanceDepartment partAFin  = new FinanceDepartment("partA finance ");
+        FinanceDepartment partAFin = new FinanceDepartment("partA finance ");
 
         partA.add(partAFin);
         partA.add(partAHR);
 
-
         comp.add(partA);
 
         comp.showInfo(1);
-
-
 
         comp.LineOfDuty();
     }

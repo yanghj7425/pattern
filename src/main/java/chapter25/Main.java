@@ -1,13 +1,9 @@
-package chapter25.mediator;
+package chapter25;
 
-import org.junit.Test;
+import chapter25.mediator.*;
 
-public class MediatorTest {
-
-
-    @Test
-
-    public void mediatorTest() {
+public class Main {
+    public static void main(String[] args) {
         UnitedNations unitedNations = new UnitedSecurityNations();
 
         USA usa = new USA();
@@ -22,8 +18,5 @@ public class MediatorTest {
         unitedNations.sendMessageToOther("hello", japan);
 
         unitedNations.sendMessageToSpecial("hahahh", egypt);
-
     }
-
-
 }

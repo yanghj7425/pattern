@@ -6,11 +6,9 @@ public class PublisherMove extends Publisher {
 
     private String title;
 
-
     public PublisherMove(String title) {
         this.title = title;
     }
-
 
     @Override
     public int notifySubscribe() {
@@ -18,7 +16,6 @@ public class PublisherMove extends Publisher {
             subscribe.setSubscribeState(getPublishState());
             subscribe.update();
         }
-
         return subscribes.size();
     }
 }

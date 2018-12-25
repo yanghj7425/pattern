@@ -6,8 +6,8 @@ import chapter27.interpreter.visitor.Action;
 import chapter27.interpreter.visitor.FailAction;
 import chapter27.interpreter.visitor.SuccessAction;
 
-public class VisitorClient {
-    public void visitorClient() {
+public class Main {
+    public static void main(String[] args) {
         Action action;
         ObjectStructure objectStructure = new ObjectStructure();
         objectStructure.attach(new Man());
@@ -21,7 +21,5 @@ public class VisitorClient {
         action = new FailAction();
 
         objectStructure.show(action);
-
-
     }
 }

@@ -25,7 +25,7 @@ public class ReceptorObserver implements Observer {
     }
 
     @Override
-    public void notifyObserver(final String message) {
+    public void notifyObserver(String message) {
         for (Observable observer : observers) {
             observer.update(message);
         }

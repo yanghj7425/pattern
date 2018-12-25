@@ -4,7 +4,7 @@ import chapter14.Publish.publisher.Publisher;
 import chapter14.Publish.publisher.PublisherNews;
 import chapter14.Publish.subscribe.Subscriber;
 
-public class Client {
+public class Main {
 
     public static void main(String[] args) {
 
@@ -12,7 +12,6 @@ public class Client {
 
         publisher.attach(new Subscriber(publisher, "hh"));
         publisher.attach(new Subscriber(publisher, "yy"));
-
 
         System.out.println(publisher.notifySubscribe());
 

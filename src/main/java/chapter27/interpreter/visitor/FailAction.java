@@ -16,4 +16,5 @@ public class FailAction implements Action {
     public void womanReaction(Woman woman) {
         System.out.println(woman.getClass().getName() + "\t" + getClass().getSimpleName());
     }
+
 }

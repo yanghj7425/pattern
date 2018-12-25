@@ -6,6 +6,6 @@ public class Woman implements Person {
 
     @Override
     public void accept(Action action) {
-            action.womanReaction(this);
+        action.womanReaction(this);
     }
 }

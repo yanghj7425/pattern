@@ -1,13 +1,7 @@
 package chapter19.composite.concept;
 
-import chapter19.composite.concept.Composite;
-import chapter19.composite.concept.Leaf;
-import org.junit.Test;
-
-public class CompositeTest {
-
-    @Test
-    public void compositeTest() {
+public class Main {
+    public static void main(String[] args) {
         Composite root = new Composite("root");
 
         root.add(new Leaf("leaf A"));
@@ -21,6 +15,5 @@ public class CompositeTest {
         root.add(comp);
 
         root.show(1);
-
     }
 }

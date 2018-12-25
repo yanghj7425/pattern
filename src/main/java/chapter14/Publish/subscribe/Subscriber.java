@@ -17,13 +17,10 @@ public class Subscriber extends Subscribe {
             return;
         }
         System.out.println(name + "\t:\t" + getClass().getName() + publisher.getClass().getName());
-
     }
 
     public Subscriber(Publisher publisher, String name) {
         this.publisher = publisher;
         this.name = name;
     }
-
-
 }

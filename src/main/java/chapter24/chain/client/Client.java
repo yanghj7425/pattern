@@ -12,12 +12,9 @@ public class Client {
         Handler h2 = new ConcreteHandlerB();
         Handler h3 = new ConcreteHandlerC();
 
-
         h1.setHandler(h2);
         h2.setHandler(h3);
 
-
         h1.handlerProcess(resources);
-
     }
 }

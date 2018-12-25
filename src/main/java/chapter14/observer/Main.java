@@ -6,11 +6,5 @@ public class Main {
         Observable stock = new StockHolder("H.J", observer);
         observer.attach(stock);
         observer.notifyObserver("haha ~");
-
-    }
-
-
-    public class Hello<T>{
-
     }
 }

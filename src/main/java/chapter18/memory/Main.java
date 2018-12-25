@@ -1,13 +1,7 @@
 package chapter18.memory;
 
-import org.junit.Test;
-
-public class MemoryTest {
-
-
-    @Test
-    public void memoryTest() {
-
+public class Main {
+    public static void main(String[] args) {
         GameCareTaker careTaker = new GameCareTaker();
 
         GamePlayer player = new GamePlayer();
